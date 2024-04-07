@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@300;400;500;800&display=swap");
+
+body {
+    background-color: #007bff;
+    background: linear-gradient(to right, #0062e6, #33aeff);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    text-align: center;
+
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: -30px;
+    color: rgba(118, 111, 111, 0.52);
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: rgba(26, 21, 21, 0.82);
+    margin-top: -10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(213, 211, 211, 0.819);
+    margin-bottom: 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 210px;
+    gap: 2rem;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.dis-det {
+    opacity: 0.5;
+}
+
+#btn-nme {
+    font-size: 60%;
+    background-color: #007bff;
+    border-radius: 50px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+span {
+    margin: -10px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin-left: 0.3rem;
+
+    font-weight: 500;
+
+    font-size: 13px;
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 65vw;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2056px) {
+    .container {
+        place-content: center;
+    }
+}
